@@ -1,0 +1,109 @@
+/* Flex container for the nav menu */
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .nav-flex ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-flex ul li {
+    margin-right: 20px;
+  }
+  
+  .nav-flex ul li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .nav-flex ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Flex container for the footer */
+  .footer-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-column a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Flex container for the team gallery */
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .flex-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-member {
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .team-member img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .team-member figcaption {
+    padding: 10px;
+    background-color: #f8f9fa;
+  }
+  
+  .team-member h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #343a40;
+  }
+  
+  .team-member p {
+    margin: 5px 0;
+    color: #6c757d;
+  }
+  

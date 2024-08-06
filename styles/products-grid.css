@@ -1,0 +1,139 @@
+/* General styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+.header {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.header .logo {
+  width: 100px;
+  vertical-align: middle;
+}
+
+.header h1 {
+  margin: 10px 0;
+}
+
+.header .nav {
+  margin-top: 10px;
+}
+
+.header .nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.header .nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.header .nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header .nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styling */
+main.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+main.products-grid .product {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  padding: 20px;
+  width: calc(33% - 40px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+main.products-grid .product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+main.products-grid .product h2 {
+  margin: 15px 0;
+  font-size: 1.5em;
+}
+
+main.products-grid .product p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Footer styling */
+.footer {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .footer-column {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer .footer-column p,
+.footer .footer-column ul {
+  margin: 5px 0;
+}
+
+.footer .footer-column a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer .footer-column a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer .footer-column ul li {
+  margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  main.products-grid .product {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 480px) {
+  main.products-grid .product {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
